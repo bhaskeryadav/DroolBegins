@@ -1,0 +1,24 @@
+package com.learn.drool.rule
+
+rule "1000 dis"
+	when 
+		obj: Bill(finalAmount >= 1000);
+	then
+		obj.setDiscount(500d);
+		//modify (obj){discount=500d};
+end
+
+rule "2000 dis"
+	when 
+		obj: Bill(finalAmount >= 2000);
+	then
+		obj.setDiscount(1000d);
+end
+
+
+rule "calculateBill"
+	when
+		obj: Bill(finalAmount >0);
+	then
+		obj.calculateFinalBill();
+end

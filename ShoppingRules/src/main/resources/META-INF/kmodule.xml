@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://jboss.org/kie/6.0.0/kmodule">
+
+    <kbase name="HelloWorldKB" default="true" packages="rules">
+        <ksession name="HelloWorldKS" default="true"/>
+    </kbase>
+    
+    <kbase name="Shopping" default="true" packages="discount">
+        <ksession name="DiscountCal" default="true"/>
+    </kbase>
+    
+    <kbase name="Fibonacci" packages="fibRules">
+        <ksession name="FibonacciKS"/>
+    </kbase>
+    
+</kmodule>
